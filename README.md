@@ -12,6 +12,7 @@ Inspired from the article of [Josh Branchaud / How I Built a Learning Machine](h
 - [Chrome](#chrome)
 - [CSS](#css)
 - [Devops](#devops)
+- [ESLint](#eslint)
 - [Gatsby](#gatsby)
 - [Git](#git)
 - [HTML](#html)
@@ -24,6 +25,7 @@ Inspired from the article of [Josh Branchaud / How I Built a Learning Machine](h
 - [Mac](#mac)
 - [Netlify](#netlify)
 - [Next.js](#nextjs)
+- [NodeJS](#nodejs)
 - [PostgreSQL](#postgresql)
 - [Prettier](#prettier)
 - [Python](#python)
@@ -31,6 +33,7 @@ Inspired from the article of [Josh Branchaud / How I Built a Learning Machine](h
 - [React](#react)
 - [React Native](#react-native)
 - [React Testing Library](#react-testing-library)
+- [Typescript](#typescript)
 - [Shell](#shell)
 - [Unix](#unix)
 - [Vercel](#vercel)
@@ -43,9 +46,11 @@ Inspired from the article of [Josh Branchaud / How I Built a Learning Machine](h
 - [Simulating various connection speed](chrome/simulating-various-connection-speeds.md)
 - [Open the Developer tools](chrome/open-the-open-the-developer-toolbox.md)
 
+### NodeJS
+
+- [Add Typescript support](nodejs/how-to-add-typescript-support-to-nodejs.md)
+
 ### Prettier
 
+- [Install and configure prettier](prettier/how-to-install-and-configure-prettier.md)
 - [Create a default configuration file](prettier/how-to-create-a-default-configuration-file.md)
-### TypeScript
-
-
