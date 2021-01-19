@@ -53,4 +53,4 @@ Inspired from the article of [Josh Branchaud / How I Built a Learning Machine](h
 ### Prettier
 
 - [Install and configure prettier](prettier/how-to-install-and-configure-prettier.md)
-- [Create a default configuration file](prettier/how-to-create-a-default-configuration-file.md)
+- [Create a default configuration file](how-to-create-a-default-configuration-file.md)
