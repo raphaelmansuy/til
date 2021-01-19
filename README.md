@@ -43,16 +43,9 @@ Inspired from the article of [Josh Branchaud / How I Built a Learning Machine](h
 - [Simulating various connection speed](chrome/simulating-various-connection-speeds.md)
 - [Open the Developer tools](chrome/open-the-open-the-developer-toolbox.md)
 
-<<<<<<< HEAD
 ### Prettier
 
-- [Create a default configuration file]()
-=======
-### Pretier
-
-- [Create a default configuration](prettier/create-a-default-configuration.md)
-
->>>>>>> aef349f7a600000835e8c483340224b5e35496ae
+- [Create a default configuration file](prettier/how-to-create-a-default-configuration-file.md)
 ### TypeScript
 
 
