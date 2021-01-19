@@ -25,6 +25,7 @@ Inspired from the article of [Josh Branchaud / How I Built a Learning Machine](h
 - [Netlify](#netlify)
 - [Next.js](#nextjs)
 - [PostgreSQL](#postgresql)
+- [Prettier](#prettier)
 - [Python](#python)
 - [React](#react)
 - [React Native](#react-native)
@@ -40,5 +41,9 @@ Inspired from the article of [Josh Branchaud / How I Built a Learning Machine](h
 
 - [Simulating various connection speed](chrome/simulating-various-connection-speeds.md)
 - [Open the Developer tools](chrome/open-the-open-the-developer-toolbox.md)
+
+### Pretier
+
+- [Create a default configuration](prettier/create-a-default-configuration.md)
 
 ### TypeScript
