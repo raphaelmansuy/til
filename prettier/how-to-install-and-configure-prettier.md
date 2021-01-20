@@ -4,11 +4,15 @@
 
 ### Install prettier
 
+`npm`
+
 ```bash
 npm install prettier --save-dev
 npm install eslint-config-prettier --save-dev
 npm install eslint-plugin-prettier --save-dev
 ```
+
+`yarn`
 
 ```bash
 yarn add prettier --save-dev
