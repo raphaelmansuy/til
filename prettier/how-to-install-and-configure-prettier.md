@@ -10,6 +10,13 @@ npm install eslint-config-prettier --save-dev
 npm install eslint-plugin-prettier --save-dev
 ```
 
+```bash
+yarn add prettier --save-dev
+yarn add eslint-config-prettier --save-dev
+yarn add eslint-plugin-prettier --save-dev
+```
+
+
 ### Create a `.prettierrc` file in the root directory of the project
 
 ```json
