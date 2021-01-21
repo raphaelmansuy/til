@@ -50,6 +50,10 @@ Inspired from the article of [Josh Branchaud / How I Built a Learning Machine](h
 
 - [Add Typescript support](nodejs/how-to-add-typescript-support-to-nodejs.md)
 
+### Typescript
+
+- [Composable functional programming](typescript/composable-functional-programming.md)
+
 ### Prettier
 
 - [Install and configure prettier](prettier/how-to-install-and-configure-prettier.md)
