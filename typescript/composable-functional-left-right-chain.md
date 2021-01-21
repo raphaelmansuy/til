@@ -1,8 +1,6 @@
 # Composable programming with Left, Right and Chaining
 
 ```typescript
-// Inferred type is randomEither: () => Either<never, number> | Either<string, never>
-
 interface Left<T> {
   inspect(): string
   map<U>(f: (arg0: T) => U): Left<T>
