@@ -8,38 +8,11 @@ Inspired from the article of [Josh Branchaud / How I Built a Learning Machine](h
 
 ## Categories
 
-- [Amplify](#amplify)
 - [Chrome](#chrome)
-- [CSS](#css)
-- [Devops](#devops)
-- [ESLint](#eslint)
-- [Gatsby](#gatsby)
-- [Git](#git)
-- [HTML](#html)
-- [HTTP](#http)
-- [Internet](#internet)
-- [JavaScript](#javascript)
-- [jq](#jq)
-- [Kitty](#kitty)
-- [Linux](#linux)
-- [Mac](#mac)
-- [Netlify](#netlify)
-- [Next.js](#nextjs)
 - [NodeJS](#nodejs)
-- [PostgreSQL](#postgresql)
 - [Prettier](#prettier)
-- [Python](#python)
-- [Prettier](#prettier)
-- [React](#react)
-- [React Native](#react-native)
-- [React Testing Library](#react-testing-library)
 - [Typescript](#typescript)
-- [Shell](#shell)
-- [Unix](#unix)
-- [Vercel](#vercel)
-- [Vim](#vim)
-- [VSCode](#vscode)
-- [Webpack](#webpack)
+
 
 ### Chrome
 
