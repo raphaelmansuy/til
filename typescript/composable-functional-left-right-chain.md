@@ -1,30 +1,18 @@
 # Composable programming with Left, Right and Chaining
 
 ```typescript
-interface Box<T> {
-  inspect(): string
-  map<U>(f: (arg0: T) => U): Box<U>
-  fold<U>(f: (arg0: T) => U): U
-}
-
-function Box<T>(x: T): Box<T> {
-  return {
-    inspect: () => `Box(${x})`,
-    map: (f) => Box(f(x)),
-    fold: (f) => f(x)
-  }
-}
+// Inferred type is randomEither: () => Either<never, number> | Either<string, never>
 
 interface Left<T> {
   inspect(): string
   map<U>(f: (arg0: T) => U): Left<T>
-  fold<U>(f: (arg0: T) => U, g: (arg0: T) => U): U
+  fold<TF>(f: (arg0: T) => TF, g: (arg0: T) => TF): TF
 }
 
 interface Right<T> {
   inspect(): string
   map<U>(f: (arg0: T) => U): Right<U>
-  fold<U>(f: (arg0: T) => U, g: (arg0: T) => U): U
+  fold<TF>(f: (arg0: T) => TF, g: (arg0: T) => TF): TF
 }
 
 function Left<T>(x: T): Left<T> {
@@ -46,7 +34,7 @@ function Right<T>(x: T): Right<T> {
 const expr1 = Left(7)
   .map((x) => x + 1)
   .fold(
-    (x) => x,
+    (x) => Math.sin(x),
     (x) => x
   )
 const expr2 = Right(8)
@@ -58,6 +46,35 @@ const expr2 = Right(8)
 
 console.log(expr1)
 console.log(expr2)
+
+function prop(obj: Record<any, any>, name: string) {
+  const anyObj: any = obj
+  return anyObj[name]
+}
+
+const colors = {
+  red: "RED",
+  green: "GREEN",
+  blue: "BLUE"
+}
+
+const x = prop(colors, "blue")
+
+function findColor(name: string) {
+  const res = prop(colors, name)
+  return res ? Left(res) : Right(8)
+}
+
+// Inferred type is findColor: (name: string) => Right<never, string> | Left<string, never>
+// The parameter's type annotation is an object type
+const z = findColor("xred").fold(
+  (x: string) => x.toLowerCase(),
+  (x) => "Null"
+)
 ```
 
-[Playground](https://www.typescriptlang.org/play?ssl=51&ssc=1&pln=1&pc=1#code/JYOwLgpgTgZghgYwgAgEIHsAeAeAKgPmQG8AoZc5UAZwAcIEwAKASgC5kqwpQBzMigLZwa2AKr5GMdozhQeABna5myALyFRbNFjH5+5GOgA2AE12TpshUpXrkm9qJIBfEiRgBXEA2DoQ2nAJGTBt2DEDCUgpkKAgwDyh-KOiKajoGaVtCAANwxgASIkxnZmyAGn0UoRppGCyAyWDmZgqUikNTWvqYJsrXVxJQSFhEFAAZCBgwPEjKtPomLU5uED5o6vMpZBk5RWRlNQ0tCamZyo6zcQttqz2Du1Ey5B5LXZtD+y0nAcHwaHgkMgAErAHgAC2mBGIcxAtAWLHYy14lQ2Vy2O2s+3qDmBoIhunOxkuEnRt3eDyeLxubyxHxx3zcnm8YF8-hOkIkISx7HZM2h0Vi8US-LalFh6TAmQ+2XZBSKJXKlXWwi6H1lmBaSvaRNqlO6vWi-UZXh8flx4I5wVC5vxUOS5EFCSSWvI8wy23q2RBFrlxVKrVF1VVdm9EMaGs1ouQF11z3qPANFCNbgQfk4yAgmBoUAAjGpkLKAOzMAB01WCH0wyAA1Mgc6WLhW7JgnlXm8wSKnYWAM1moAAmfOhpgADlL5bbhCrtfrJcbk+QmGrOdbleXHZTaeMEBLRnQCcz2frna3Rh3e4Pff7HaAA)
+[Playground Link](https://www.typescriptlang.org/play?#code/PTAEEkDsDMFMCd6wCagC4E8AOtQEsBnUeAQ0mQHsBbAUTzQAsEAuUACgEpQBeAPlDqMEAHkiwAbggA0oSAFcqAIwT8APgPpN4wgmnh5IAcxljJ8XgFgAUNYNoE0EgGNcAGVjQ0wgCr8A3tag+JAEOE5onKy6+kaBoFQkWMIAqrxs0KxsJPCGAAys3lx8oMkcrO6ePpZWQdAUADbIPgBiaRns2XkFRfzezTKGmZ35oIU8vc1lo83WAL7WtpD28I4uoABKeIYMXr6gATXBobDhkaDRBoZxCUmp6UM5I2PFpayb216pcXWNLW0PXVGPWmAwBT2BfSmfTmCys0DkkHCeAokFAFV2aQAHt1yh4Mfs4kg0HJ4KiDkEggZjuFMsCAAbotgAEj8mNmHDpUjiQRumWgwMZmI4XMOtQayD5A2B0DYQri8ysCus8MRaGRqPeOyqspxGy2Wr25OIsGJpIJoqOYTQtPGoDpmoiLLZHJFFPiiT5wId6VlHGF3NAPwl7GgUtthl98phNisThRulAsExWHgAEYeGi8WwAOwcOIAOhubF9tsxoAA1KBU3nDvmg2wAyXigBZEiMfMEAy+10Upv8TFxGtxkJoRPJ+AAJgz3oAHDWgoXEsWhaWK1X56A6+KGxa+6Ay5XUz2gnuD1XB7DhwQGrB8-UKBGkynq9Yrze7w+2E-JzXlQikSioAphQWBsBQigAFZvCcFDwE0ZAYDICG8CYJBULAUR6JcXBGleo4IQA8pBrAIRm4EQYSJokqihGQQA2pAaGwAAutGr7xqOcb3vARDcOaQRIMGABE6w0AAIkJPaGEgsCQKwQkAOKiTQAByklxIo9RyBhoBCQAQq4yQ0EJbGxhx+4ZsBoFcbBBAyEJmnaUJv5wv+aqAdABjIAAwg0sFsIx6GYTEhg4XEeHGrxQHwCBbA2TxqHoRuRLUZFoAAPyZp4bBIAQXBvPqERzqZIAQDACCCeg2C4IQgZeb53GZIFOkXEYXqFaIEjSOcWFGGoWVeK1xiyF15jWKV3hMEB2RMcsADkRCYDgoBkJAFBoG26r4EQZCgORJyjktsDsSOoAAF4Zp55ANf5QmYoJzlbo0O4ntiPUhcCmL5mgFCuBQADuCDeSQBCwJwPZ7kJKlyPU9QmVYLlAA)
+
+```
+
+```
