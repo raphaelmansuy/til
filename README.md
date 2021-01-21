@@ -53,6 +53,7 @@ Inspired from the article of [Josh Branchaud / How I Built a Learning Machine](h
 ### Typescript
 
 - [Composable functional programming](typescript/composable-functional-programming.md)
+- [Either type for functional programming](typescript/composable-functional-left-right-chain.md)
 
 ### Prettier
 
