@@ -125,7 +125,7 @@ export default App
 yarn install
 ```
 
-- Exectute the application
+- Execute the application
 
 ```bash
 yarn start
