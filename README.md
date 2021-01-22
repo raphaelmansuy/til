@@ -8,11 +8,13 @@ Inspired from the article of [Josh Branchaud / How I Built a Learning Machine](h
 
 ## Categories
 
-- [Chrome](#chrome)
-- [NodeJS](#nodejs)
-- [Prettier](#prettier)
-- [Typescript](#typescript)
-
+- [TIL](#til)
+  - [Categories](#categories)
+    - [Chrome](#chrome)
+    - [NodeJS](#nodejs)
+    - [MonoRepo](#monorepo)
+    - [Typescript](#typescript)
+    - [Prettier](#prettier)
 
 ### Chrome
 
@@ -23,6 +25,10 @@ Inspired from the article of [Josh Branchaud / How I Built a Learning Machine](h
 
 - [Add Typescript support](nodejs/how-to-add-typescript-support-to-nodejs.md)
 
+### MonoRepo
+
+- [Setup a mono repository with yarn workspace](/monorepo/how-to-create-a-mono-repo-with-yarn-workspace.md)
+
 ### Typescript
 
 - [Composable functional programming](typescript/composable-functional-programming.md)
@@ -31,4 +37,4 @@ Inspired from the article of [Josh Branchaud / How I Built a Learning Machine](h
 ### Prettier
 
 - [Install and configure prettier](prettier/how-to-install-and-configure-prettier.md)
-- [Create a default configuration file](how-to-create-a-default-configuration-file.md)
+- [Create a default configuration file](prettier/how-to-create-a-default-configuration-file.md)
