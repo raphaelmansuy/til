@@ -130,3 +130,5 @@ yarn install
 ```bash
 yarn start
 ```
+
+ A good article of [Sebastien Weber](https://doppelmutzi.github.io/) about [Multirepo vs Monorepo approach](https://doppelmutzi.github.io/monorepo-lerna-yarn-workspaces/#:~:text=yarn%20workspaces%20is%20the%20only,yarn%20as%20dependency%20management%20tools.)
