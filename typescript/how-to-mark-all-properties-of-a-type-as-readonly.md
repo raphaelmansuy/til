@@ -1,4 +1,4 @@
-# How to mark all properties of a type as readonly
+# How to mark all properties of a type as readonly in TypeScript
 
 ```typescript
 type DeepReadonlyObject<T> = { readonly [K in keyof T]: DeepReadOnly<T[K]> }
