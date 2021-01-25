@@ -23,3 +23,5 @@ class ToDoService {
   @GetTodo
   todos: Promise<ITodo[]>
 }
+
+const myTodo = new ToDoService().todos.then((list) => console.table(list))
