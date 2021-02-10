@@ -10,6 +10,6 @@ For example for the repository [https://github.com/matchabot/matcha-bot](https:/
 
 You add 1s to github and the address becomes [https://github1s.com/matchabot/matcha-bot](https://github1s.com/matchabot/matcha-bot)
 
-![Screen Capture](Screen%20Shot%202021-02-10%20at%2010.06.39.png)
+![Screen Capture](screen1.png)
 
 The project is available at [https://github.com/conwnet/github1s](https://github.com/conwnet/github1s)
