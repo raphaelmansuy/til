@@ -144,7 +144,6 @@ We are now ready to deploy this container to the cloud.
 
 - [`aws cli`](https://aws.amazon.com/cli/) must be installed
 - your [aws profile](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-profiles.html) must be configured and have ECS admin rights enabled
--
 
 Run the following command:
 
@@ -164,25 +163,25 @@ Login Succeeded
 
 Connect to the AWS Console and to the ECS Administration screen to create a new repository.
 
-![ECR Step1](./images/ecr1.png)
+![ECR Step1](https://github.com/raphaelmansuy/til/raw/main/docker/images/ecr1.png)
 
 Click on **Create Repository** and choose `testrepository` as a name for your repository:
 
-![ECR Step2](./images/ecr2.png)
+![ECR Step2](https://github.com/raphaelmansuy/til/raw/main/docker/images/ecr2.png)
 
 The ECR repository is now created:
 
-![ECR Step3](./images/ecr3.png)
+![ECR Step3](https://github.com/raphaelmansuy/til/raw/main/docker/images/ecr3.png)
 
 ## Upload the image on AWS ECR
 
 Click now on the `push commands button` on the repository screen:
 
-![ECR Step4](images/ecr4.png)
+![ECR Step4](https://github.com/raphaelmansuy/til/raw/main/docker/images/ecr4.png)
 
 Copy and execute each command on your machine:
 
-![ECR Step5](images/ecr5.png)
+![ECR Step5](https://github.com/raphaelmansuy/til/raw/main/docker/images/ecr5.png)
 
 **connect**:
 
@@ -209,6 +208,10 @@ docker tag testrepository:latest 3680199100XXX.dkr.ecr.us-west-2.amazonaws.com/t
 docker push 3680199100XXX.dkr.ecr.us-west-2.amazonaws.com/testrepository:latest
 ```
 
-The image is now published and available on ECR:
+The image is now published and available on ECR ready to be deployed:
 
-![ECR Step6](images/ecr6.png)
+![ECR Step6](https://github.com/raphaelmansuy/til/raw/main/docker/images/ecr6.png)
+
+## Create an ECS Cluster
+
+Go to the ECS home page and click on the `create cluster`button:
