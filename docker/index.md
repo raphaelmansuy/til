@@ -218,4 +218,15 @@ Go to the ECS home page and click on the `create cluster` button:
 
 ![ECR Step7](https://github.com/raphaelmansuy/til/raw/main/docker/images/ecr7.png)
 
+Choose `EC2 Linux + Networking` and then click next:
+
+![ECR Step8](https://github.com/raphaelmansuy/til/raw/main/docker/images/ecr8.png)
+
+Then enter the following information:
+
+- name of the cluster
+
+
+
+
 
