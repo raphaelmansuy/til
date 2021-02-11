@@ -222,8 +222,6 @@ If you look at AmazonECR, repositories we can see the new created image.
 
 ![ECR Step6-2](https://github.com/raphaelmansuy/til/raw/main/docker/images/ecr6_2.png)
 
-
-
 Copy the image URI: we need to keep this to create a task definition for the following steps.
 
 ```
@@ -276,4 +274,12 @@ Then `next`
 Choose `NodeWebAppTask` for the name of the task definition.
 
 ![ECR Step13](https://github.com/raphaelmansuy/til/raw/main/docker/images/ecr13.png)
+
+Enter `128`for memory size.
+
+Click add container:
+
+![ECR Step14](https://github.com/raphaelmansuy/til/raw/main/docker/images/ecr14.png)
+
+
 
