@@ -226,6 +226,8 @@ Then enter the following information:
 
 - name of the cluster
 
+![ECR Step9](https://github.com/raphaelmansuy/til/raw/main/docker/images/ecr9.png)
+
 
 
 
