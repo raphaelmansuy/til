@@ -24,7 +24,7 @@ Inspired from the article of [Josh Branchaud / How I Built a Learning Machine](h
 
 ### Github
 
-- [Open an Online VSCode like editor with github1s](github/github1s.md) 
+- [Open an Online VSCode like editor with github1s](github/github1s.md)
 
 ### NodeJS
 
@@ -43,3 +43,5 @@ Inspired from the article of [Josh Branchaud / How I Built a Learning Machine](h
 
 - [Install and configure prettier](prettier/how-to-install-and-configure-prettier.md)
 - [Create a default configuration file](prettier/how-to-create-a-default-configuration-file.md)
+
+[Edit on Github](https://github.com/raphaelmansuy/til/edit/main/README.md)
