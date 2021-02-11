@@ -216,6 +216,17 @@ The image is now published and available on ECR ready to be deployed:
 
 ![ECR Step6](https://github.com/raphaelmansuy/til/raw/main/docker/images/ecr6.png)
 
+If you look at AmazonECR, repositories we can see the new created image.
+
+![ECR Step6-1](https://github.com/raphaelmansuy/til/raw/main/docker/images/ecr6.png)
+
+
+Copy the image URI: we need to keep this to create a task definition for the following steps.
+
+```
+368019910004.dkr.ecr.us-west-2.amazonaws.com/testrepository:latest
+```
+
 ## Create an ECS Cluster
 
 Go to the ECS home page and click on the `create cluster` button:
@@ -262,16 +273,3 @@ Then `next`
 Choose `NodeWebAppTask` for the name of the task definition.
 
 ![ECR Step13](https://github.com/raphaelmansuy/til/raw/main/docker/images/ecr13.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
