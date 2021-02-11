@@ -15,7 +15,7 @@ In this tutorial we will explain how to:
 - Launch our application as a task within the Elastic Container Cluster
 - Expose and open this application on internet
 
-![Workflow Shema](images/schema01.png)
+![Workflow Shema](https://github.com/raphaelmansuy/til/raw/main/docker/images/schema01.png)
 
 - [Docker](https://www.docker.com) is a technology that helps to package and ship applications easily in production.
 - [ECS](https://aws.amazon.com/ecs/?whats-new-cards.sort-by=item.additionalFields.postDateTime&whats-new-cards.sort-order=desc&ecs-blogs.sort-by=item.additionalFields.createdDate&ecs-blogs.sort-order=desc) stands for Elastic Container Service. It is a fully managed container orchestration service
