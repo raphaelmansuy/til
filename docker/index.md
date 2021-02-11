@@ -1,6 +1,6 @@
 # 10 minutes to deploy a Docker App to AWS using ECS
 
-AWS proposes two container orchestrations service: ECS and Kubernete.
+AWS proposes two container orchestrations services: ECS and Kubernete.
 
 Well integrated with the AWS ecosystem, ECS is the proprietary version.
 
