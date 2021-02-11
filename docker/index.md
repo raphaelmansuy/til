@@ -218,7 +218,10 @@ The image is now published and available on ECR ready to be deployed:
 
 If you look at AmazonECR, repositories we can see the new created image.
 
-![ECR Step6-1](https://github.com/raphaelmansuy/til/raw/main/docker/images/ecr6.png)
+![ECR Step6-1](https://github.com/raphaelmansuy/til/raw/main/docker/images/ecr6_1.png)
+
+![ECR Step6-2](https://github.com/raphaelmansuy/til/raw/main/docker/images/ecr6_2.png)
+
 
 
 Copy the image URI: we need to keep this to create a task definition for the following steps.
@@ -273,3 +276,4 @@ Then `next`
 Choose `NodeWebAppTask` for the name of the task definition.
 
 ![ECR Step13](https://github.com/raphaelmansuy/til/raw/main/docker/images/ecr13.png)
+
