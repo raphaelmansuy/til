@@ -296,8 +296,12 @@ Then go to `Run Task`
 ![ECR Step17](https://github.com/raphaelmansuy/til/raw/main/docker/images/ecr17.png)
 
 ![ECR Step18](https://github.com/raphaelmansuy/til/raw/main/docker/images/ecr18.png)
-![ECR Step19](https://github.com/raphaelmansuy/til/raw/main/docker/images/ecr18.png)
-![ECR Step19](https://github.com/raphaelmansuy/til/raw/main/docker/images/ecr18.png)
-![ECR Step18](https://github.com/raphaelmansuy/til/raw/main/docker/images/ecr18.png)
-![ECR Step18](https://github.com/raphaelmansuy/til/raw/main/docker/images/ecr18.png)
+
+The task is now running:
+
+![ECR Step19](https://github.com/raphaelmansuy/til/raw/main/docker/images/ecr19.png)
+![ECR Step20](https://github.com/raphaelmansuy/til/raw/main/docker/images/ecr20.png)
+![ECR Step21](https://github.com/raphaelmansuy/til/raw/main/docker/images/ecr21.png)
+![ECR Step22](https://github.com/raphaelmansuy/til/raw/main/docker/images/ecr22.png)
+![ECR Step23](https://github.com/raphaelmansuy/til/raw/main/docker/images/ecr23.png)
 
