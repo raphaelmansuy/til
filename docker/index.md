@@ -281,5 +281,23 @@ Click add container:
 
 ![ECR Step14](https://github.com/raphaelmansuy/til/raw/main/docker/images/ecr14.png)
 
+- Add the name of the container: `NodeWebApp`
+- Set the image URI that we have saved add the end of the `add image` step
+- Set the port mappings 80:8080
 
+![ECR Step15](https://github.com/raphaelmansuy/til/raw/main/docker/images/ecr15.png)
+
+Click `create`.
+
+![ECR Step16](https://github.com/raphaelmansuy/til/raw/main/docker/images/ecr16.png)
+
+Then go to `Run Task`
+
+![ECR Step17](https://github.com/raphaelmansuy/til/raw/main/docker/images/ecr17.png)
+
+![ECR Step18](https://github.com/raphaelmansuy/til/raw/main/docker/images/ecr18.png)
+![ECR Step19](https://github.com/raphaelmansuy/til/raw/main/docker/images/ecr18.png)
+![ECR Step19](https://github.com/raphaelmansuy/til/raw/main/docker/images/ecr18.png)
+![ECR Step18](https://github.com/raphaelmansuy/til/raw/main/docker/images/ecr18.png)
+![ECR Step18](https://github.com/raphaelmansuy/til/raw/main/docker/images/ecr18.png)
 
