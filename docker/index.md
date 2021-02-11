@@ -300,8 +300,28 @@ Then go to `Run Task`
 The task is now running:
 
 ![ECR Step19](https://github.com/raphaelmansuy/til/raw/main/docker/images/ecr19.png)
+
+If we click on the container instance:
+
 ![ECR Step20](https://github.com/raphaelmansuy/til/raw/main/docker/images/ecr20.png)
+
+We can modify the security group associated with instance to open the port `80`
+
 ![ECR Step21](https://github.com/raphaelmansuy/til/raw/main/docker/images/ecr21.png)
 ![ECR Step22](https://github.com/raphaelmansuy/til/raw/main/docker/images/ecr22.png)
+
+Add 80 in the inbound rule to the security group:
+
 ![ECR Step23](https://github.com/raphaelmansuy/til/raw/main/docker/images/ecr23.png)
+
+If we try now to open the url: `http://ec2-52-38-113-251.us-west-2.compute.amazonaws.com`:
+
+![ECR Step24](https://github.com/raphaelmansuy/til/raw/main/docker/images/ecr24.png)
+
+
+
+
+
+
+
 
