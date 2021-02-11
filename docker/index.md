@@ -214,4 +214,8 @@ The image is now published and available on ECR ready to be deployed:
 
 ## Create an ECS Cluster
 
-Go to the ECS home page and click on the `create cluster`button:
+Go to the ECS home page and click on the `create cluster` button:
+
+![ECR Step7](https://github.com/raphaelmansuy/til/raw/main/docker/images/ecr7.png)
+
+
