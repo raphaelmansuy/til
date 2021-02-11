@@ -2,7 +2,7 @@
 
 AWS proposes two container orchestrations service: ECS and Kubernete.
 
-Well integrated with the AWS ecosystem, ECS is the proprieratary version.
+Well integrated with the AWS ecosystem, ECS is the proprietary version.
 
 ## What we will build
 
