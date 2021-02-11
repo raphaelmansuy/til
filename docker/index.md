@@ -318,10 +318,3 @@ If we try now to open the url: `http://ec2-52-38-113-251.us-west-2.compute.amazo
 
 ![ECR Step24](https://github.com/raphaelmansuy/til/raw/main/docker/images/ecr24.png)
 
-
-
-
-
-
-
-
