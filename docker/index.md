@@ -1,4 +1,8 @@
-# How to deploy a Docker App to AWS using ECS
+# 10 minutes to deploy a Docker App to AWS using ECS
+
+AWS proposes two container orchestrations service: ECS and Kubernete.
+
+Well integrated with the AWS ecosystem, ECS is the proprieratary version.
 
 ## What we will build
 
@@ -224,11 +228,27 @@ Choose `EC2 Linux + Networking` and then click next:
 
 Then enter the following information:
 
-- name of the cluster
+- name of the cluster: `ecs01`
+- EC2 instance type: `t3-micro`
+- Number of instances: `1`
 
 ![ECR Step9](https://github.com/raphaelmansuy/til/raw/main/docker/images/ecr9.png)
 
+Then choose:
 
+- Default VPC
+- Auto assign IP: `Enabled`
+- Security group: `default`
+- Choose one of the subnet
 
+![ECR Step10](https://github.com/raphaelmansuy/til/raw/main/docker/images/ecr10.png)
+
+And then next press `Enter`
+
+## Create a new Task definition
+
+> A task a set of metadata (memory, cpu, port mappings, environment variables, etc) that describes how a container should be deployed.
+
+![ECR Step11](https://github.com/raphaelmansuy/til/raw/main/docker/images/ecr11.png)
 
 
