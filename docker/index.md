@@ -249,7 +249,27 @@ And then next press `Enter`
 
 > A task a set of metadata (memory, cpu, port mappings, environment variables, etc) that describes how a container should be deployed.
 
+Click on new `Task definition`
+
 ![ECR Step11](https://github.com/raphaelmansuy/til/raw/main/docker/images/ecr11.png)
+
+Choose `EC2`
+
+![ECR Step12](https://github.com/raphaelmansuy/til/raw/main/docker/images/ecr12.png)
+
+Then `next`
+
+Choose `NodeWebAppTask` for the name of the task definition.
+
+![ECR Step13](https://github.com/raphaelmansuy/til/raw/main/docker/images/ecr13.png)
+
+
+
+
+
+
+
+
 
 
 
