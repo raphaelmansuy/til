@@ -1,33 +1,33 @@
-# 10 minutes to deploy a Docker App to AWS using ECS
+# Deploy a Docker App to AWS using ECS
 
-AWS proposes two container orchestrations service: ECS and Kubernete.
+AWS proposes two container orchestrations services: **ECS** and **Kubernete**.
 
-Well integrated with the AWS ecosystem, ECS is the proprieratary version.
+Well integrated with the AWS ecosystem, ECS is the proprietary version.
 
 ## What we will build
 
 In this tutorial we will explain how to:
 
 - Package and build a node application and package a simple node application with Docker
-- Create a ECR repository to store our Docker Image
+- Create an ECR repository to store our Docker Image
 - Upload the Docker image to the repository
 - Create and launch an Elastic Container Cluster (ECR)
 - Launch our application as a task within the Elastic Container Cluster
-- Expose and open this application on internet
+- Expose and open this application on the internet
 
 ![Workflow Shema](https://github.com/raphaelmansuy/til/raw/main/docker/images/schema01.png)
 
 - [Docker](https://www.docker.com) is a technology that helps to package and ship applications easily in production.
 - [ECS](https://aws.amazon.com/ecs/?whats-new-cards.sort-by=item.additionalFields.postDateTime&whats-new-cards.sort-order=desc&ecs-blogs.sort-by=item.additionalFields.createdDate&ecs-blogs.sort-order=desc) stands for Elastic Container Service. It is a fully managed container orchestration service
-- [ECR](https://docs.aws.amazon.com/AmazonECR/latest/userguide/what-is-ecr.html) stands for Elastic Container Repository. ECR allows to storage of Docker Images on AWS.
+- [ECR](https://docs.aws.amazon.com/AmazonECR/latest/userguide/what-is-ecr.html) stands for Elastic Container Repository. ECR allows storage of Docker Images on AWS.
 
 Concepts:
 
-- A cluster is logical grouping of hardware ressources.
-- A task a set of metadata (memory, cpu, port mappings, environment variables, etc) that describes how a container should be deployed.
-- Services are responsible to manage advance configuration such as load balancing
+- A cluster is a logical grouping of hardware resources.
+- A task is a set of metadata (memory, CPU, port mapping, environmental variables, etc) that describes how a container should be deployed.
+- Services are responsible for managing advanced configurations such as load balancing
 
-## The [nodeJS](https://nodejs.org) application to deploy
+## The [NodeJS](https://nodejs.org) application to deploy
 
 We want to deploy a basic express node application that displays the current time each time the index page is refreshed.
 
@@ -72,9 +72,9 @@ console.log(`Running on http://${HOST}:${PORT}`)
 
 [https://nodejs.org/en/docs/guides/nodejs-docker-webapp/](https://nodejs.org/en/docs/guides/nodejs-docker-webapp/)
 
-## Package the nodejs application with a Docker file
+## Package the node.js application with a Docker file
 
-In the same directory of this application we can create a `Dockerfile` that explains how to build a container with this application:
+In the same directory of this application, we can create a `Dockerfile` that explains how to build a container with this application:
 
 ### `Dockerfile`
 
@@ -155,7 +155,7 @@ Run the following command:
 aws ecr get-login-password --region us-west-2 | docker login
 ```
 
-If your have access you should have this display on the terminal:
+If you have access, you should have this displayed on the terminal:
 
 ```bash
 Authenticating with existing credentials...
@@ -173,7 +173,7 @@ Click on **Create Repository** and choose `testrepository` as a name for your re
 
 ![ECR Step2](https://github.com/raphaelmansuy/til/raw/main/docker/images/ecr2.png)
 
-The ECR repository is now created:
+The ECR repository has now been created:
 
 ![ECR Step3](https://github.com/raphaelmansuy/til/raw/main/docker/images/ecr3.png)
 
@@ -216,7 +216,7 @@ The image is now published and available on ECR ready to be deployed:
 
 ![ECR Step6](https://github.com/raphaelmansuy/til/raw/main/docker/images/ecr6.png)
 
-If you look at AmazonECR, repositories we can see the new created image.
+If you look at AmazonECR, repositories we can see the newly created image.
 
 ![ECR Step6-1](https://github.com/raphaelmansuy/til/raw/main/docker/images/ecr6_1.png)
 
@@ -259,7 +259,7 @@ And then next press `Enter`
 
 ## Create a new Task definition
 
-> A task a set of metadata (memory, cpu, port mappings, environment variables, etc) that describes how a container should be deployed.
+> A task is a set of metadata (memory, CPU, port mapping, environmental variables, etc) that describes how a container should be deployed.
 
 Click on new `Task definition`
 
@@ -277,12 +277,12 @@ Choose `NodeWebAppTask` for the name of the task definition.
 
 Enter `128`for memory size.
 
-Click add container:
+Click Add Container:
 
 ![ECR Step14](https://github.com/raphaelmansuy/til/raw/main/docker/images/ecr14.png)
 
 - Add the name of the container: `NodeWebApp`
-- Set the image URI that we have saved add the end of the `add image` step
+- Set the image URI that we have saved to add the end of the `add image` step
 - Set the port mappings 80:8080
 
 ![ECR Step15](https://github.com/raphaelmansuy/til/raw/main/docker/images/ecr15.png)
@@ -305,12 +305,12 @@ If we click on the container instance:
 
 ![ECR Step20](https://github.com/raphaelmansuy/til/raw/main/docker/images/ecr20.png)
 
-We can modify the security group associated with instance to open the port `80`
+We can modify the security group associated with the instance to open the port `80`
 
 ![ECR Step21](https://github.com/raphaelmansuy/til/raw/main/docker/images/ecr21.png)
 ![ECR Step22](https://github.com/raphaelmansuy/til/raw/main/docker/images/ecr22.png)
 
-Add 80 in the inbound rule to the security group:
+Add 80 to the inbound rule for the security group:
 
 ![ECR Step23](https://github.com/raphaelmansuy/til/raw/main/docker/images/ecr23.png)
 
@@ -320,8 +320,7 @@ If we try now to open the url: `http://ec2-52-38-113-251.us-west-2.compute.amazo
 
 ## Et voilà
 
-Our clustor and node application is now deployed.
+Our cluster and node application is now deployed.
 
 🎉 🎉 🎉
-
 
