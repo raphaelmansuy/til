@@ -37,7 +37,7 @@ Inspired from the article of [Josh Branchaud / How I Built a Learning Machine](h
 
 ### MonoRepo
 
-- [Setup a mono repository with yarn workspace](/monorepo/how-to-create-a-mono-repo-with-yarn-workspace.md)
+- [Setup a mono repository with yarn workspace](monorepo/how-to-create-a-mono-repo-with-yarn-workspace.md)
 
 ### Typescript
 
