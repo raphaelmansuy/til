@@ -14,6 +14,7 @@ Inspired from the article of [Josh Branchaud / How I Built a Learning Machine](h
     - [Docker](#docker)
     - [Github](#github)
     - [NodeJS](#nodejs)
+    - [Nginx](#nginx)
     - [MonoRepo](#monorepo)
     - [Typescript](#typescript)
     - [Prettier](#prettier)
@@ -32,6 +33,10 @@ Inspired from the article of [Josh Branchaud / How I Built a Learning Machine](h
 - [Open an Online VSCode like editor with github1s](github/github1s.md)
 
 ### NodeJS
+
+### Nginx
+
+- []()
 
 - [Add Typescript support](nodejs/how-to-add-typescript-support-to-nodejs.md)
 
