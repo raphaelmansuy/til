@@ -10,8 +10,9 @@ sudo curl -Lo /usr/local/bin/ecs-cli https://amazon-ecs-cli.s3.amazonaws.com/ecs
 
 ### Create a cluster configuration:
 
-````bash
+```bash
 ecs-cli configure --cluster ec2-tutorial --default-launch-type EC2 --config-name ec2-tutorial --region us-west-2
+```
 
 ```bash
 ecs-cli configure profile --access-key AWS_ACCESS_KEY_ID --secret-key AWS_SECRET_ACCESS_KEY --profile-name ec2-tutorial-profile
@@ -28,8 +29,6 @@ aws ec2 create-key-pair --key-name ecskey --query 'ecskey' --output text > ecs.p
 
 ```bash
 ecs-cli up --keypair ecskey  --capability-iam --size 1 --instance-type t3.micro --cluster-config ec2-tutorial --ecs-profile ec2-tutorial-profile
-
-
 ```
 
 Create a `docker-compose.yml` file
@@ -86,5 +85,4 @@ ecs-cli compose service rm --cluster-config ec2-tutorial --ecs-profile ec2-tutor
 
 ```bash
 ecs-cli down --force --cluster-config ec2-tutorial --ecs-profile ec2-tutorial-profile
-
 ```
