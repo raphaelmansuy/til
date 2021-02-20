@@ -2,7 +2,7 @@
 
 ![Architetcure](architecture.png)
 
-`nginx.cong`
+`nginx.conf`
 
 ```
 
