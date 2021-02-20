@@ -36,9 +36,7 @@ Inspired from the article of [Josh Branchaud / How I Built a Learning Machine](h
 
 ### Nginx
 
-- []()
-
-- [Add Typescript support](nodejs/how-to-add-typescript-support-to-nodejs.md)
+- [Using nginx as a proxy](./nginx/using-nginx-as-proxy.md)
 
 ### MonoRepo
 
@@ -48,6 +46,7 @@ Inspired from the article of [Josh Branchaud / How I Built a Learning Machine](h
 
 - [Composable functional programming](typescript/composable-functional-programming.md)
 - [Either type for functional programming](typescript/composable-functional-left-right-chain.md)
+- [Add Typescript support](nodejs/how-to-add-typescript-support-to-nodejs.md)
 
 ### Prettier
 
